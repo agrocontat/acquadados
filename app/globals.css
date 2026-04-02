@@ -1,0 +1,86 @@
+@import "tailwindcss";
+@source "../components/**/*.tsx";
+@source "../app/**/*.tsx";
+
+/* CSS custom properties — unlayered, so always available */
+:root {
+  --acqua: #2AAED4;
+  --acqua-light: #4DC4E8;
+  --acqua-dark: #1A8CAD;
+  --dark-blue: #1A3A4A;
+  --charcoal: #4A4A4A;
+  --off-white: #F5F3EF;
+  --off-white-warm: #EEE9E0;
+}
+
+/* Base styles inside @layer base so Tailwind utilities override them */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--off-white);
+    color: var(--charcoal);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* Custom component classes — unlayered but use class selectors so
+   they don't override Tailwind utilities (different selectors) */
+
+.grain::before {
+  content: '';
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.025;
+  z-index: 9999;
+  animation: grain 8s steps(10) infinite;
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -10%); }
+  20% { transform: translate(-15%, 5%); }
+  30% { transform: translate(7%, -25%); }
+  40% { transform: translate(-5%, 25%); }
+  50% { transform: translate(-15%, 10%); }
+  60% { transform: translate(15%, 0%); }
+  70% { transform: translate(0%, 15%); }
+  80% { transform: translate(3%, 35%); }
+  90% { transform: translate(-10%, 10%); }
+}
+
+@keyframes whatsapp-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(42, 174, 212, 0.5); }
+  70%  { box-shadow: 0 0 0 16px rgba(42, 174, 212, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(42, 174, 212, 0); }
+}
+
+.whatsapp-pulse {
+  animation: whatsapp-pulse 3s ease-out infinite;
+}
+
+.section-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--acqua);
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--off-white); }
+::-webkit-scrollbar-thumb { background: var(--acqua-dark); border-radius: 3px; }

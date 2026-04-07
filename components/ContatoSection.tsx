@@ -38,7 +38,7 @@ export default function ContatoSection() {
           {/* Brand */}
           <div>
             <div className="mb-6">
-              <img src="/logo.png" alt="Acquadados" style={{ height: "48px", width: "auto", filter: "brightness(0) invert(1)" }} />
+              <img src="/logo.png" alt="Acquadados" style={{ maxWidth: "200px", width: "100%", height: "auto", filter: "brightness(0) invert(1)" }} />
             </div>
             <p className="text-sm leading-relaxed max-w-xs mb-6" style={{ color: "rgba(245,243,239,0.55)" }}>
               Sistema ERP completo para empresas do setor de irrigação agrícola. Desenvolvido pela NEAX Tecnologia.
@@ -99,11 +99,12 @@ export default function ContatoSection() {
             © {new Date().getFullYear()} Acquadados · NEAX Tecnologia. Todos os direitos reservados.
           </p>
           <a href="https://agrodados.com.br" target="_blank" rel="noopener noreferrer"
-            className="text-xs transition-colors duration-200" style={{ color: "rgba(245,243,239,0.3)" }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = "rgba(42,174,212,0.7)")}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(245,243,239,0.3)")}
+            className="transition-opacity duration-200 flex items-center gap-2"
+            style={{ opacity: 0.35 }}
+            onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.75")}
+            onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.35")}
           >
-            agrodados.com.br
+            <img src="/logo-agrodados.png" alt="Agrodados" style={{ height: "28px", width: "auto" }} />
           </a>
         </div>
       </div>

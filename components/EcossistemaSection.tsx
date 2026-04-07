@@ -45,12 +45,12 @@ export default function EcossistemaSection() {
 
             <div className="flex flex-col items-start lg:items-center gap-6 flex-shrink-0">
               <div className="flex items-center gap-6">
-                <div className="px-5 py-3 rounded-xl" style={{ background: "rgba(42,174,212,0.15)" }}>
-                  <span className="font-['Outfit'] text-xl font-bold" style={{ color: "#2AAED4" }}>acqua<span style={{ color: "#F5F3EF" }}>dados</span></span>
+                <div className="px-5 py-4 rounded-xl flex items-center justify-center" style={{ background: "rgba(42,174,212,0.15)" }}>
+                  <img src="/logo.png" alt="Acquadados" style={{ height: "36px", width: "auto", filter: "brightness(0) invert(1)" }} />
                 </div>
                 <div className="w-6 h-0.5" style={{ background: "rgba(245,243,239,0.2)" }} />
-                <div className="px-5 py-3 rounded-xl" style={{ background: "rgba(255,255,255,0.08)" }}>
-                  <span className="font-['Outfit'] text-xl font-bold" style={{ color: "#F5F3EF" }}>agro<span style={{ color: "#7DBD4A" }}>dados</span></span>
+                <div className="px-5 py-4 rounded-xl flex items-center justify-center" style={{ background: "rgba(255,255,255,0.08)" }}>
+                  <img src="/logo-agrodados.png" alt="Agrodados" style={{ height: "36px", width: "auto" }} />
                 </div>
               </div>
 

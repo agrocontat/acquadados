@@ -44,13 +44,13 @@ export default function EcossistemaSection() {
             </div>
 
             <div className="flex flex-col items-start lg:items-center gap-6 flex-shrink-0">
-              <div className="flex items-center gap-6">
-                <div className="px-5 py-4 rounded-xl flex items-center justify-center" style={{ background: "rgba(42,174,212,0.15)" }}>
-                  <img src="/logo.png" alt="Acquadados" style={{ height: "36px", width: "auto", filter: "brightness(0) invert(1)" }} />
+              <div className="flex items-center gap-5">
+                <div className="px-6 py-5 rounded-xl flex items-center justify-center" style={{ background: "rgba(42,174,212,0.15)", minWidth: "160px" }}>
+                  <img src="/logo.png" alt="Acquadados" style={{ width: "140px", height: "auto", filter: "brightness(0) invert(1)" }} />
                 </div>
-                <div className="w-6 h-0.5" style={{ background: "rgba(245,243,239,0.2)" }} />
-                <div className="px-5 py-4 rounded-xl flex items-center justify-center" style={{ background: "rgba(255,255,255,0.08)" }}>
-                  <img src="/logo-agrodados.png" alt="Agrodados" style={{ height: "36px", width: "auto" }} />
+                <div className="w-8 h-0.5 flex-shrink-0" style={{ background: "rgba(245,243,239,0.2)" }} />
+                <div className="px-6 py-5 rounded-xl flex items-center justify-center" style={{ background: "rgba(255,255,255,0.08)", minWidth: "100px" }}>
+                  <img src="/logo-agrodados.png" alt="Agrodados" style={{ width: "72px", height: "72px", objectFit: "contain" }} />
                 </div>
               </div>
 

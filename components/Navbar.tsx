@@ -39,7 +39,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-16 md:h-20">
         <a href="#hero" onClick={(e) => handleLinkClick(e, "#hero")} className="flex items-center">
-          <img src="/logo.png" alt="Acquadados" className="h-9 w-auto" style={{ filter: "brightness(0) invert(1)" }} />
+          <img src="/logo.png" alt="Acquadados" style={{ maxWidth: "180px", width: "auto", height: "42px", objectFit: "contain", filter: "brightness(0) invert(1)" }} />
         </a>
 
         <nav className="hidden md:flex items-center gap-8">

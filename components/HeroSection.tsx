@@ -65,10 +65,12 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-5xl mx-auto">
         <div className="mb-8 md:mb-12">
-          <div className="inline-flex items-baseline gap-0 mb-3">
-            <span className="font-['Outfit'] text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight" style={{ color: "#2AAED4" }}>acqua</span>
-            <span className="font-['Outfit'] text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight" style={{ color: "#F5F3EF" }}>dados</span>
-          </div>
+          <img
+            src="/logo.jpg"
+            alt="Acquadados"
+            className="mx-auto mb-4"
+            style={{ height: "90px", width: "auto", filter: "brightness(0) invert(1)" }}
+          />
           <div className="w-16 h-0.5 mx-auto" style={{ background: "#2AAED4" }} />
         </div>
 
@@ -93,7 +95,7 @@ export default function HeroSection() {
             Conheça o sistema
           </button>
           <a
-            href="https://wa.me/5535999908460?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20o%20Acquadados!"
+            href="https://wa.me/553597554778?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20o%20Acquadados!"
             target="_blank" rel="noopener noreferrer"
             className="text-base font-semibold px-8 py-4 rounded-full border transition-all duration-300"
             style={{ borderColor: "rgba(245,243,239,0.3)", color: "rgba(245,243,239,0.9)" }}

@@ -96,7 +96,7 @@ export default function DemonstracaoSection() {
         <div className="text-center mt-16">
           <p className="text-base md:text-lg mb-6" style={{ color: "#6A6A6A" }}>Quer ver o sistema rodando de verdade?</p>
           <a
-            href="https://wa.me/5535999908460?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20demonstra%C3%A7%C3%A3o%20do%20Acquadados!"
+            href="https://wa.me/553597554778?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20demonstra%C3%A7%C3%A3o%20do%20Acquadados!"
             target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-3 text-base font-semibold px-8 py-4 rounded-full transition-all duration-300"
             style={{ background: "var(--dark-blue)", color: "#F5F3EF" }}

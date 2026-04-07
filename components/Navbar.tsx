@@ -38,9 +38,8 @@ export default function Navbar() {
       }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-16 md:h-20">
-        <a href="#hero" onClick={(e) => handleLinkClick(e, "#hero")} className="flex items-baseline gap-0.5">
-          <span className="font-['Outfit'] text-xl font-bold tracking-tight" style={{ color: "#2AAED4" }}>acqua</span>
-          <span className="font-['Outfit'] text-xl font-bold tracking-tight" style={{ color: "#F5F3EF" }}>dados</span>
+        <a href="#hero" onClick={(e) => handleLinkClick(e, "#hero")} className="flex items-center">
+          <img src="/logo.jpg" alt="Acquadados" className="h-9 w-auto" style={{ filter: "brightness(0) invert(1)" }} />
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
@@ -58,7 +57,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="https://wa.me/5535999908460?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20o%20Acquadados!"
+            href="https://wa.me/553597554778?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20o%20Acquadados!"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200"
@@ -83,7 +82,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="https://wa.me/5535999908460?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20o%20Acquadados!"
+            href="https://wa.me/553597554778?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20o%20Acquadados!"
             target="_blank" rel="noopener noreferrer"
             className="text-sm font-semibold px-5 py-3 rounded-full text-center mt-2"
             style={{ background: "#2AAED4", color: "#fff" }}

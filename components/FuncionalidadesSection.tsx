@@ -67,7 +67,7 @@ export default function FuncionalidadesSection() {
                 <h3 className="font-['Outfit'] text-2xl md:text-3xl font-bold mb-4" style={{ color: "#F5F3EF" }}>{moduloAtivo.titulo}</h3>
                 <p className="text-base leading-relaxed max-w-lg" style={{ color: "rgba(245,243,239,0.75)" }}>{moduloAtivo.descricao}</p>
                 <a
-                  href="https://wa.me/5535999908460?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20os%20m%C3%B3dulos%20do%20Acquadados!"
+                  href="https://wa.me/553597554778?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20os%20m%C3%B3dulos%20do%20Acquadados!"
                   target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 mt-8 text-sm font-semibold transition-colors duration-200"
                   style={{ color: "#2AAED4" }}

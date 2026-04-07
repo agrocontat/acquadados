@@ -16,25 +16,19 @@ const SocialIcons = {
       <circle cx="4" cy="4" r="2" />
     </svg>
   ),
-  Facebook: () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" width="17" height="17">
-      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-    </svg>
-  ),
 };
 
 export default function ContatoSection() {
   const socials = [
-    { Icon: SocialIcons.Instagram, href: "https://instagram.com/acquadados", label: "Instagram" },
+    { Icon: SocialIcons.Instagram, href: "https://www.instagram.com/neax.agrodados/", label: "Instagram" },
     { Icon: SocialIcons.LinkedIn, href: "https://linkedin.com/company/neax-agrodados", label: "LinkedIn" },
-    { Icon: SocialIcons.Facebook, href: "#", label: "Facebook" },
   ];
 
   const contacts = [
-    { icon: Phone, text: "(35) 99990-8460", href: "tel:+5535999908460" },
+    { icon: Phone, text: "(35) 99755-4778", href: "tel:+553597554778" },
     { icon: Phone, text: "(35) 3214-3972", href: "tel:+553532143972" },
     { icon: Mail, text: "contato@acquadados.com.br", href: "mailto:contato@acquadados.com.br" },
-    { icon: MapPin, text: "Varginha - MG", href: "#" },
+    { icon: MapPin, text: "Varginha - MG | Campo Mourão - PR", href: "#" },
   ];
 
   return (
@@ -44,8 +38,7 @@ export default function ContatoSection() {
           {/* Brand */}
           <div>
             <div className="mb-6">
-              <span className="font-['Outfit'] text-3xl font-bold" style={{ color: "#2AAED4" }}>acqua</span>
-              <span className="font-['Outfit'] text-3xl font-bold" style={{ color: "#F5F3EF" }}>dados</span>
+              <img src="/logo.jpg" alt="Acquadados" style={{ height: "48px", width: "auto", filter: "brightness(0) invert(1)" }} />
             </div>
             <p className="text-sm leading-relaxed max-w-xs mb-6" style={{ color: "rgba(245,243,239,0.55)" }}>
               Sistema ERP completo para empresas do setor de irrigação agrícola. Desenvolvido pela NEAX Tecnologia.
@@ -89,7 +82,7 @@ export default function ContatoSection() {
               Atendemos empresas de irrigação de todo o Brasil. Entre em contato e agende uma demonstração sem compromisso.
             </p>
             <a
-              href="https://wa.me/5535999908460?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20o%20Acquadados!"
+              href="https://wa.me/553597554778?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20o%20Acquadados!"
               target="_blank" rel="noopener noreferrer"
               className="inline-block text-sm font-semibold px-6 py-3 rounded-full transition-all duration-300"
               style={{ background: "#2AAED4", color: "#fff" }}

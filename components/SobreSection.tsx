@@ -7,7 +7,7 @@ const diferenciais = [
   "Controle total de pivôs e equipamentos de campo",
   "Gestão fiscal completa: NF-e, SPED, ICMS",
   "Integração nativa com o ecossistema Agrodados",
-  "Relatórios de consumo hídrico em tempo real",
+  "Controle contábil e fiscal integrado ao negócio",
 ];
 
 export default function SobreSection() {

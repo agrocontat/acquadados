@@ -28,14 +28,19 @@ export default function EcossistemaSection() {
 
           <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
             <div className="max-w-2xl">
-              <span className="section-label block mb-4" style={{ color: "rgba(42,174,212,0.7)" }}>Ecossistema</span>
-              <h2 className="font-['Outfit'] text-2xl md:text-4xl font-bold mb-4 leading-tight" style={{ color: "#F5F3EF" }}>
-                Do mesmo DNA do{" "}
-                <span style={{ color: "#2AAED4" }}>Agrodados</span>
+              <span className="section-label block mb-4" style={{ color: "rgba(42,174,212,0.7)" }}>Nossa história</span>
+              <h2 className="font-['Outfit'] text-2xl md:text-4xl font-bold mb-6 leading-tight" style={{ color: "#F5F3EF" }}>
+                De 1994 ao campo —{" "}
+                <span style={{ color: "#2AAED4" }}>uma jornada de propósito</span>
               </h2>
-              <p className="text-base md:text-lg leading-relaxed" style={{ color: "rgba(245,243,239,0.7)" }}>
-                O ERP que já gerencia centenas de empresas do agronegócio brasileiro. A mesma solidez, agora com módulos específicos para irrigação. Quem usa o Agrodados já conhece a base. Quem usa o Acquadados tem tudo integrado.
-              </p>
+              <div className="flex flex-col gap-4">
+                <p className="text-sm md:text-base leading-relaxed" style={{ color: "rgba(245,243,239,0.7)" }}>
+                  Trabalhando no comércio de insumos agrícolas e cereais desde 1994, vivemos de perto a dificuldade de gestão que as empresas do agronegócio enfrentavam. Foi com esse propósito que, em 2009, iniciamos o desenvolvimento do <strong style={{ color: "#F5F3EF" }}>Agrodados</strong> — nosso próprio sistema ERP para o agronegócio.
+                </p>
+                <p className="text-sm md:text-base leading-relaxed" style={{ color: "rgba(245,243,239,0.7)" }}>
+                  Com o crescimento do Agrodados e a evolução das necessidades dos clientes, surgiu a demanda por uma solução especializada em irrigação. Desenvolvemos então módulos específicos para essa área — dando origem ao <strong style={{ color: "#2AAED4" }}>Acquadados</strong>.
+                </p>
+              </div>
             </div>
 
             <div className="flex flex-col items-start lg:items-center gap-6 flex-shrink-0">

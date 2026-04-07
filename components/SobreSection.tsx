@@ -1,13 +1,24 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { CheckCircle } from "lucide-react";
+import { Target, Eye, Heart } from "lucide-react";
 
-const diferenciais = [
-  "Controle total de pivôs e equipamentos de campo",
-  "Gestão fiscal completa: NF-e, SPED, ICMS",
-  "Integração nativa com o ecossistema Agrodados",
-  "Controle contábil e fiscal integrado ao negócio",
+const mvv = [
+  {
+    icon: Target,
+    titulo: "Missão",
+    texto: "Desenvolver soluções de gestão eficientes para empresas de irrigação, proporcionando controle, organização e praticidade no dia a dia.",
+  },
+  {
+    icon: Eye,
+    titulo: "Visão",
+    texto: "Ser referência em tecnologia para o segmento de irrigação, levando inovação e melhoria contínua na gestão dos negócios.",
+  },
+  {
+    icon: Heart,
+    titulo: "Valores",
+    texto: "Compromisso com o cliente, transparência, inovação, confiabilidade e parceria.",
+  },
 ];
 
 export default function SobreSection() {
@@ -36,7 +47,8 @@ export default function SobreSection() {
         .reveal-left.animate-in, .reveal-right.animate-in { opacity: 1; transform: translateX(0); }
       `}</style>
 
-      <div className="max-w-7xl mx-auto grid md:grid-cols-[3fr_2fr] gap-16 lg:gap-24 items-center">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-[3fr_2fr] gap-16 lg:gap-24 items-start">
+        {/* Text column */}
         <div ref={leftRef} className="reveal-left">
           <span className="section-label block mb-4">O que é</span>
           <h2 className="font-['Outfit'] text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6" style={{ color: "var(--dark-blue)" }}>
@@ -44,21 +56,29 @@ export default function SobreSection() {
             <span style={{ color: "#2AAED4" }}>feita para quem irriga</span>
           </h2>
           <p className="text-base md:text-lg leading-relaxed mb-4" style={{ color: "#5A5A5A" }}>
-            O Acquadados é um sistema ERP desenvolvido especificamente para empresas do setor de irrigação agrícola. Partindo da sólida base do Agrodados — ERP utilizado por centenas de empresas do agronegócio brasileiro — o Acquadados adiciona módulos exclusivos para o controle de irrigação.
+            O Acquadados é um software de gestão moderno, desenvolvido para atender com eficiência empresas de pequeno, médio e grande porte do setor de irrigação agrícola.
           </p>
           <p className="text-base md:text-lg leading-relaxed mb-10" style={{ color: "#5A5A5A" }}>
-            Da emissão de nota fiscal ao monitoramento de pivôs em campo, tudo integrado em uma plataforma pensada para a realidade das empresas que vendem, instalam e mantêm sistemas de irrigação.
+            Sua estrutura em módulos oferece uma experiência completa e intuitiva — do faturamento e fiscal ao controle de campo — simplificando o dia a dia do gestor e tornando a operação mais estratégica.
           </p>
-          <ul className="flex flex-col gap-3">
-            {diferenciais.map((d, i) => (
-              <li key={i} className="flex items-start gap-3">
-                <CheckCircle size={20} className="mt-0.5 flex-shrink-0" style={{ color: "#2AAED4" }} />
-                <span className="text-base" style={{ color: "var(--charcoal)" }}>{d}</span>
-              </li>
+
+          {/* MVV */}
+          <div className="flex flex-col gap-5">
+            {mvv.map(({ icon: Icon, titulo, texto }) => (
+              <div key={titulo} className="flex items-start gap-4">
+                <div className="flex-shrink-0 mt-1 w-9 h-9 rounded-lg flex items-center justify-center" style={{ background: "rgba(42,174,212,0.1)" }}>
+                  <Icon size={17} style={{ color: "#2AAED4" }} />
+                </div>
+                <div>
+                  <p className="text-sm font-semibold mb-1" style={{ color: "var(--dark-blue)" }}>{titulo}</p>
+                  <p className="text-sm leading-relaxed" style={{ color: "#6A6A6A" }}>{texto}</p>
+                </div>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
 
+        {/* Image column */}
         <div ref={rightRef} className="reveal-right">
           <div className="relative">
             <div className="absolute -top-6 -right-6 w-full h-full rounded-2xl z-0" style={{ background: "rgba(42,174,212,0.12)" }} />

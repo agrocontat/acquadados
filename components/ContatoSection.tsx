@@ -38,7 +38,7 @@ export default function ContatoSection() {
           {/* Brand */}
           <div>
             <div className="mb-6">
-              <img src="/logo.jpg" alt="Acquadados" style={{ height: "48px", width: "auto", filter: "brightness(0) invert(1)" }} />
+              <img src="/logo.png" alt="Acquadados" style={{ height: "48px", width: "auto", filter: "brightness(0) invert(1)" }} />
             </div>
             <p className="text-sm leading-relaxed max-w-xs mb-6" style={{ color: "rgba(245,243,239,0.55)" }}>
               Sistema ERP completo para empresas do setor de irrigação agrícola. Desenvolvido pela NEAX Tecnologia.

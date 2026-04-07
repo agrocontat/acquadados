@@ -66,7 +66,7 @@ export default function HeroSection() {
       <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-5xl mx-auto">
         <div className="mb-8 md:mb-12">
           <img
-            src="/logo.jpg"
+            src="/logo.png"
             alt="Acquadados"
             className="mx-auto mb-4"
             style={{ height: "90px", width: "auto", filter: "brightness(0) invert(1)" }}

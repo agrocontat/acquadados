@@ -69,7 +69,7 @@ export default function HeroSection() {
             src="/logo.png"
             alt="Acquadados"
             className="mx-auto mb-4"
-            style={{ maxWidth: "480px", width: "90vw", height: "auto", filter: "brightness(0) invert(1)" }}
+            style={{ maxWidth: "480px", width: "90vw", height: "auto" }}
           />
           <div className="w-16 h-0.5 mx-auto" style={{ background: "#2AAED4" }} />
         </div>

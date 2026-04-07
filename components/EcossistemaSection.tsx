@@ -44,13 +44,17 @@ export default function EcossistemaSection() {
             </div>
 
             <div className="flex flex-col items-start lg:items-center gap-6 flex-shrink-0">
-              <div className="flex items-center gap-5">
-                <div className="px-6 py-5 rounded-xl flex items-center justify-center" style={{ background: "rgba(255,255,255,0.95)", minWidth: "160px" }}>
-                  <img src="/logo.png" alt="Acquadados" style={{ width: "140px", height: "auto" }} />
+              <div className="flex flex-col gap-4">
+                <div className="rounded-2xl flex items-center justify-center" style={{ background: "#fff", padding: "24px 32px" }}>
+                  <img src="/logo.png" alt="Acquadados" style={{ width: "200px", height: "auto" }} />
                 </div>
-                <div className="w-8 h-0.5 flex-shrink-0" style={{ background: "rgba(245,243,239,0.2)" }} />
-                <div className="px-6 py-5 rounded-xl flex items-center justify-center" style={{ background: "rgba(255,255,255,0.95)", minWidth: "100px" }}>
-                  <img src="/logo-agrodados.png" alt="Agrodados" style={{ width: "80px", height: "80px", objectFit: "contain" }} />
+                <div className="flex items-center gap-3">
+                  <div className="flex-1 h-px" style={{ background: "rgba(245,243,239,0.15)" }} />
+                  <span className="text-xs" style={{ color: "rgba(245,243,239,0.35)" }}>parte do ecossistema</span>
+                  <div className="flex-1 h-px" style={{ background: "rgba(245,243,239,0.15)" }} />
+                </div>
+                <div className="rounded-2xl flex items-center justify-center" style={{ background: "#fff", padding: "24px 32px" }}>
+                  <img src="/logo-agrodados.png" alt="Agrodados" style={{ height: "72px", width: "auto" }} />
                 </div>
               </div>
 
